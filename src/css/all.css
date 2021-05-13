@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+html,
+body,
+p,
+span,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+input,
+button,
+i,
+select {
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight: normal;
+}
+
+ul li,
+ol li {
+	list-style: none;
+}
+
+i{
+	font-style: normal;
+}
+
+img {
+	vertical-align: top;
+}
+
+input,button{
+	outline: none;
+}
+
+.clear::after{
+	content: "";
+	overflow: hidden;
+	display: block;
+	font-size: 0;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+}

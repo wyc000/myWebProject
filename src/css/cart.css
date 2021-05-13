@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+a:hover{
+    color: #b20fd3 !important;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 2000px;
+}
+
+.centerpage{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 顶部登录导航 */
+.top_nav{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px #ededed solid;
+    background: #eee;
+}
+.top_nav>div>.top_nav_left{
+    float: left;
+}
+.top_nav>div>.top_nav_right{
+    float: right;
+}
+.top_nav>div>.top_nav_left>li,
+.top_nav>div>.top_nav_right>li{
+    float: left;
+    position: relative;
+    border-left: 1px transparent solid;
+    border-right: 1px transparent solid;
+}
+.top_nav>div>.top_nav_left>li>a,
+.top_nav>div>.top_nav_right>li>a,
+.top_nav>div>.top_nav_left>li>a>i,
+.top_nav>div>.top_nav_right>li>a>i{
+    padding: 0 5px;
+    font-size: 10px;
+    line-height: 30px;
+    color: #888;
+    display: inline-block;
+    transition: .2s;
+}
+.top_nav>div>.top_nav_left>li:hover,
+.top_nav>div>.top_nav_right>li:hover{
+    background: #fafafa;
+    border-left: 1px #d1d1d1 solid;
+    border-right: 1px #d1d1d1 solid;
+}
+.top_nav>div>.top_nav_left>li:hover>a,
+.top_nav>div>.top_nav_right>li:hover>a{
+    color: #b20fd3;
+}
+.top_nav>div>.top_nav_left>li:hover>a>i:not(.bef),
+.top_nav>div>.top_nav_right>li:hover>a>i:not(.bef){
+    transform: rotateZ(180deg);
+}
+.bef{
+    color: #b20fd3 !important;
+}
+.top_nav>div>.top_nav_left>li>div{
+    width: 230px;
+    font-size: 12px;
+}
+.top_nav>div>.top_nav_left>li>div>div{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px #ddd solid;
+    text-align: center;
+    line-height: 50px;
+}
+.top_nav>div>.top_nav_left>li>div>p{
+    float: left;
+    line-height: 50px;
+    padding-left: 10px;
+}
+.top_nav>div>.top_nav_left>li>div,
+.top_nav>div>.top_nav_right>li>div{
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    padding: 10px;
+    background: #fafafa;
+    border: 1px #d1d1d1 solid;
+    border-top: none;
+    display: none;
+    z-index: 999;
+}
+.top_nav>div>.top_nav_left>li:hover>div,
+.top_nav>div>.top_nav_right>li:hover>div{
+    display: block;
+}
+/* logo样式 */
+.logo{
+    padding: 30px 0;
+}
+/* gouwuche */
+.cartcontent{
+    padding-bottom: 20px;
+}
+/* 空购物车 */
+.cartcontent .emptyCart{
+    padding: 70px 0;
+    user-select: none;
+    display: none;
+    border: 1px #ccc solid;
+}
+.cartcontent .emptyCart p{
+    text-align: center;
+}
+.cartcontent .emptyCart p i{
+    font-size: 80px;
+    color: #ddd;
+}
+.cartcontent .emptyCart p span{
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+/* gouwuche */
+.address{
+    position: relative;
+    text-align: right;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.address i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #FE8023;
+    color:#fff;
+    margin: 0 5px;
+    text-align: center;
+}
+.explain{
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 210px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 3px #666;
+    display: none;
+}
+.explain p{
+    font-size: 13px;
+    color: #999;
+    padding: 5px 0;
+    text-align: left;
+}
+.explain p:first-child{
+    font-weight: 600;
+}
+.operation{
+    height: 44px;
+    background: #EEEEEE;
+    padding-left: 3px;
+}
+.operation ul{
+    width: 100%;
+}
+.operation ul li{
+    float: left;
+    line-height: 44px;
+    font-size: 12px;
+}
+.li1{
+    width: 110px;
+    padding: 0 10px;
+}
+.li1 input{
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+.li2{
+    width: 385px;
+}
+.li2 p{
+    width: 220px;
+    font-size: 13px;
+}
+.li3{
+    width: 85px;
+    padding: 0 40px 0 22px;
+}
+.li4{
+    width: 80px;
+}
+.li4 div{
+    width: 60px;
+    border: 1px #999 solid;
+}
+.li4 span{
+    text-align: center;
+    display: inline-block;
+    width: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+.li4 span:nth-child(1){
+    border-right: 1px #999 solid;
+}
+.li4 span:nth-child(3){
+    border-left: 1px #999 solid;
+}
+.li5{
+    width: 84px;
+    padding-right: 70px;
+    text-align: right;
+}
+.li6 p{
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.shop{
+    border: 1px #ddd solid;
+    margin-top: 20px;
+}
+.name{
+    padding: 13px;
+    border-bottom: 1px #ddd solid;
+}
+.name b,
+.name span{
+    font-size: 12px;
+}
+.name b{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.name span,
+.name i{
+    color: #666;
+}
+.name input{
+    margin-right: 5px;
+}
+.goods{
+    padding: 15px 0;
+}
+.goods ul{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px #eee solid;
+}
+.goods ul:last-child{
+    border-bottom: none;
+}
+.goods ul li{
+    float: left;
+    font-size: 13px;
+}
+.goods ul li img{
+    width: 80px;
+}
+.goods ul li span{
+    display: inline-block;
+}
+.goods ul li input[type=text]{
+    width: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+/* 结算部分 */
+.settlement{
+    width: 100%;
+    height: 60px;
+    background: #eee;
+    margin-bottom: 20px;
+    position: inherit;
+}
+.settlement .menu{
+    width: 100%;
+    line-height: 60px;
+    font-size: 12px;
+    user-select: none;
+}
+.settlement .menuLeft{
+    float: left;
+    padding-left: 15px;
+}
+.settlement .menuLeft input{
+    margin-right: 5px;
+}
+.settlement .menuLeft span:nth-child(3){
+    margin: 0 35px;
+}
+.settlement .menuLeft span{
+    cursor: pointer;
+}
+.settlement .menuRight{
+    float: right;
+}
+.settlement .menuRight b{
+    font-size: 20px;
+    color: red;
+    padding: 0 10px;
+}
+.settlement .menuRight a{
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background: #e3101e;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    transition: .3s;
+}
+.settlement .menuRight a:hover{
+    background: #e7626b;
+    color: #fff !important;
+}
+/* 页脚样式 */
+.footer{
+    width: 100%;
+    background: #eee;
+    border-top: 2px #b20fd3 solid;
+}
+.footer>div>p{
+    font-size: 13px;
+    padding: 2px 0;
+    color: #575757;
+}
+.footer>div>p:first-child{
+    font-size: 13px;
+    padding: 15px 0;
+}
+.footer>div>p:first-child a{
+    font-size: 13px;
+    padding: 0 3px;
+    color: #232323;
+}
+.footer>div>p:first-child a:hover{
+    color: rgb(223, 38, 240);
+}
+.footer>div>p:last-child{
+    padding-bottom: 15px;
+}
